@@ -1,0 +1,53 @@
+﻿﻿@{
+    ViewBag.Title = "Book List";
+}
+
+<script src="~/js/bookTable.js"></script>
+
+<h2>Book List</h2>
+
+<div class="control-panel">
+    <div class="row">
+        <div class="col-md-2">
+            <label for="languageDropdown" class="form-label fw-bold">Language</label>
+            <select id="languageDropdown" class="form-select">
+                <option value="en" selected>English</option>
+                <option value="es">Spanish</option>
+                <option value="ko">Korean </option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="seedInput" class="form-label fw-bold">Seed</label>
+            <div class="input-group">
+                <input id="seedInput" type="text" class="form-control" disabled="True" value="1" pattern="\d*" style="background: white" placeholder="Click on button" />
+                <button id="generateSeedBtn" class="btn btn-outline-primary" type="button">Random</button>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="d-flex align-items-center justify-content-between">
+                <label for="likesSlider" class="form-label fw-bold">Likes</label>
+                <span id="likesValue" class="fw-bold">5</span>
+            </div>
+            <input id="likesSlider" type="range" class="form-range" min="0" max="10" step="0.1" value="5" />
+        </div>
+        <div class="col-md-2">
+            <label for="reviewsInput" class="form-label fw-bold">Reviews</label>
+            <input id="reviewsInput" type="number" class="form-control" step="0.1" value="1" min="0" max="10" />
+        </div>
+    </div>
+</div>
+
+<table id="booksTable" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th></th>
+            <th>#</th>
+            <th>ISBN</th>
+            <th>Title</th>
+            <th>Author(s)</th>
+            <th>Publisher</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>

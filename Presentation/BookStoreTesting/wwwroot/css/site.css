@@ -1,0 +1,93 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    #booksTable {
+        font-size: 0.8rem;
+    }
+
+        #booksTable th, #booksTable td {
+            padding: 8px;
+        }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+
+.card {
+    margin: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.card-img-left {
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.fa-thumbs-up {
+    margin-right: 5px;
+}
+
+.blockquote {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+#booksTable {
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+    #booksTable thead {
+        background-color: #f5f5f5;
+        font-weight: bold;
+    }
+
+    #booksTable th, #booksTable td {
+        padding: 10px 15px;
+        text-align: left;
+    }
+
+    #booksTable tbody tr {
+        border-bottom: 1px solid #ddd;
+        transition: background-color 0.3s ease;
+    }
+
+        #booksTable tbody tr:hover {
+            background-color: #f9f9f9;
+        }
