@@ -18,5 +18,6 @@ RUN dotnet publish "BookStoreTesting.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
+EXPOSE 80
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "BookStoreTesting.dll"]
