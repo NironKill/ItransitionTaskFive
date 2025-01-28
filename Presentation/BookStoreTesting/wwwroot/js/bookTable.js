@@ -5,11 +5,6 @@
     $('#seedInput').val(randomSeed);
     let table = new DataTable('#booksTable',
         {
-            layout: {
-                topStart: {
-                    buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
-                }
-            },
             searching: false,
             paging: false,
             bFiltered: false,
@@ -163,5 +158,15 @@
     $('#reviewsInput').on('input', function () {
         resetAndReload();
     });
-});
 
+    $('#seedForm').on('submit', function (e) {
+        e.preventDefault();
+
+        const seedValue = $('#seedInput').val();
+        if (!seedValue || isNaN(seedValue)) {
+            alert('Please enter a valid seed!');
+            return;
+        }
+        resetAndReload();
+    });
+});

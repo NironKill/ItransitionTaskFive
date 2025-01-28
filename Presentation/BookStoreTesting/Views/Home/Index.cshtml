@@ -18,10 +18,13 @@
         </div>
         <div class="col-md-3">
             <label for="seedInput" class="form-label fw-bold">Seed</label>
-            <div class="input-group">
-                <input id="seedInput" type="text" class="form-control" disabled="True" value="1" pattern="\d*" style="background: white" placeholder="Click on button" />
-                <button id="generateSeedBtn" class="btn btn-outline-primary" type="button">Random</button>
-            </div>
+            <form id="seedForm">
+                <div class="input-group">
+                    <input id="seedInput" type="text" class="form-control" value="1" pattern="\d*" style="background: white" placeholder="Click on button" />
+                    <button id="enterSeedBtn" class="btn btn-outline-primary" type="submit">Enter</button>
+                    <button id="generateSeedBtn" class="btn btn-outline-primary" type="button">Random</button>
+                </div>
+            </form>
         </div>
         <div class="col-md-2">
             <div class="d-flex align-items-center justify-content-between">
